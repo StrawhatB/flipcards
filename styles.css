@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1200px;
+  margin: auto;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #e6dede;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+}
+.logo{
+  float: left;
+  font-size: x-large;
+}
+.navbar{
+  display: flex;
+  overflow: hidden;
+  padding-left: 60%;
+
+}
+.navbar ul{
+  display: flex;
+
+}
+.navbar ul li{
+  list-style: none;
+  display: flex;
+  float: left;
+  padding: 3px 10px;
+  
+}
+.navbar, a{
+  color: rgb(68, 56, 56);
+ 
+}
+.navbar ul li:hover{
+  background-color: rgb(109, 109, 204);
+}
+.left, .right, .middle {
+  float: left;
+  display: flex;
+ 
+}
+.card{
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10%;
+}
+.footer{
+  margin-top: 10%;
+}
+
+/* Style the footer */
+.footer {
+  clear: left;
+  grid-area: footer;
+  text-align: center;
+  background-color: rgb(147, 184, 190);
+  color: white;
+  text-align: center;
+}
+.left{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .left:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /*MIDDLE  */
+  .middle{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .middle:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  /*RIGHT  */
+  .right{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .right:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  @media screen and (max-width:480px) {
+    .left, .right, .middle{
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
